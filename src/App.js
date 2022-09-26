@@ -64,6 +64,7 @@ function App() {
   }, [erros]);
 
   function mensagemperdeu() {
+    setAtivo(false);
     return setPerdeu(
       <div className="perdeu">
         Você <span>perdeu</span>, a palavra correta era:
