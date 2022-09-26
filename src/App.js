@@ -192,6 +192,7 @@ function App() {
                   <button
                     disabled={words[e]}
                     className="letra"
+                    style={{ color: words[e] ? "#000" : "#fff" }}
                     onClick={() => {
                       setWords((prevState) => {
                         const state = { ...prevState };
