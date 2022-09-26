@@ -119,3 +119,24 @@ body {
   font-size: 40px;
   color: green;
 }
+
+@media (max-width: 700px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .forcaeescolherpalavra {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .letras-alfabeto {
+    width: 100%;
+    display: flex;
+    max-width: 450px;
+    justify-content: center;
+    align-items: center;
+  }
+}
