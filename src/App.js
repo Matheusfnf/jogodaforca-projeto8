@@ -11,6 +11,35 @@ import palavras from "../src/palavras.js";
 import { useEffect, useState } from "react";
 import React from "react";
 
+const alphabet = {
+  a: false,
+  b: false,
+  c: false,
+  d: false,
+  e: false,
+  f: false,
+  g: false,
+  h: false,
+  i: false,
+  j: false,
+  k: false,
+  l: false,
+  m: false,
+  n: false,
+  o: false,
+  p: false,
+  q: false,
+  r: false,
+  s: false,
+  t: false,
+  u: false,
+  v: false,
+  w: false,
+  x: false,
+  y: false,
+  z: false,
+};
+
 function App() {
   const [word, setWord] = useState("");
   const [ativo, setAtivo] = useState(false);
@@ -20,34 +49,7 @@ function App() {
   const [perdeu, setPerdeu] = useState("");
   const [vitoria, setVitoria] = useState("");
   const [textochute, settextochute] = useState("");
-  const [words, setWords] = useState({
-    a: false,
-    b: false,
-    c: false,
-    d: false,
-    e: false,
-    f: false,
-    g: false,
-    h: false,
-    i: false,
-    j: false,
-    k: false,
-    l: false,
-    m: false,
-    n: false,
-    o: false,
-    p: false,
-    q: false,
-    r: false,
-    s: false,
-    t: false,
-    u: false,
-    v: false,
-    w: false,
-    x: false,
-    y: false,
-    z: false,
-  });
+  const [words, setWords] = useState(alphabet);
   useEffect(() => {
     if (erros == 6) {
       setImagem(sextaimagem);
@@ -68,6 +70,15 @@ function App() {
         <span className="underline"> {palavraembaralhada}</span>
       </div>
     );
+  }
+
+  function resetgame() {
+    setImagem(imagemforcainicial);
+    setErros(0);
+    setAtivo(true);
+    setVitoria(false);
+    setPerdeu(false);
+    setWords(alphabet);
   }
 
   function mudouinput() {
@@ -143,7 +154,10 @@ function App() {
       <section className="estadoinicial">
         <div className="forcaeescolherpalavra">
           <img className="imginicial" src={imagem} alt="" />
-          <div onClick={() => embaralhapalavra()} className="escolherpalavra">
+          <div
+            onClick={() => (resetgame(), embaralhapalavra())}
+            className="escolherpalavra"
+          >
             Escolher Palavra
           </div>
         </div>
