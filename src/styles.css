@@ -1,0 +1,121 @@
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.estadoinicial {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.forcaeescolherpalavra {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 1%;
+  width: 100%;
+}
+
+.escolherpalavra {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin-top: 5%;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: green;
+  -webkit-box-shadow: -2px -1px 22px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -2px -1px 22px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px -1px 22px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.letras-alfabeto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 950px;
+}
+
+.letra {
+  font-size: 40px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  border: 1px solid rgb(68, 99, 131);
+  background-color: rgb(55, 57, 64);
+  border-radius: 5px;
+}
+
+.OpcaoChutar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.inputchute {
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.Chutar {
+  padding: 10px;
+  border: 1px solid lightblue;
+  background-color: lightblue;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.JaSeiAPalavra {
+  font-size: 20px;
+}
+
+.palavraunderline {
+  font-size: 100px;
+  text-align: end;
+  margin-top: -20px;
+}
+
+.letrinha {
+  font-size: 40px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  border: 1px solid rgb(68, 99, 131);
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.perdeu span {
+  color: red;
+}
+
+.ganhou span {
+  color: green;
+}
+.ganhou {
+  font-size: 30px;
+}
+.perdeu {
+  font-size: 30px;
+}
+
+.underline {
+  font-size: 50px;
+}
+
+.palavraganhou {
+  font-size: 40px;
+  color: green;
+}
