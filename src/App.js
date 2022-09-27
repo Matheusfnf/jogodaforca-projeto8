@@ -1,3 +1,4 @@
+import "./reset.css";
 import "./styles.css";
 import "./palavras.js";
 import imagemforcainicial from "./images/forca0.png";
@@ -159,7 +160,7 @@ function App() {
             onClick={() => (resetgame(), embaralhapalavra())}
             className="escolherpalavra"
           >
-            Escolher Palavra
+            <p>Escolher Palavra</p>
           </div>
         </div>
         <div>
@@ -209,7 +210,7 @@ function App() {
                 );
               })}
         </div>
-
+              
         <div className="OpcaoChutar">
           <div className="JaSeiAPalavra">Já sei a palavra!</div>
           <input
