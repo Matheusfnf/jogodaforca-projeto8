@@ -116,12 +116,12 @@ function App() {
     const palavranormalizada = palavraEscolhida
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
-    console.log(palavraEscolhida);
+    console.log(palavranormalizada);
 
-    setPalavraEmbaralhada(palavraEscolhida);
+    setPalavraEmbaralhada(palavranormalizada);
 
     let palavratrocada = "";
-    for (let i = 0; i < palavraEscolhida.length; i++) {
+    for (let i = 0; i < palavranormalizada.length; i++) {
       palavratrocada = palavratrocada + "-";
     }
     return setWord(palavratrocada);
@@ -213,7 +213,7 @@ function App() {
               
         <div className="OpcaoChutar">
           <div className="JaSeiAPalavra">Já sei a palavra!</div>
-          <input
+          <input disabled ={!ativo ? true : false}
             className="inputchute"
             type="text"
             name="input"
@@ -222,7 +222,7 @@ function App() {
             }}
           />
 
-          <button onClick={mudouinput} className="Chutar">
+          <button disabled ={!ativo ? true : false } onClick={mudouinput} className="Chutar">
             Chutar{" "}
           </button>
         </div>

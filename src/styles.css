@@ -21,7 +21,7 @@ body {
 }
 
 .forcaeescolherpalavra {
-  margin: 20px;
+  margin: 10px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -63,7 +63,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   max-width: 800px;
-  width: 80%;
+  width: 90%;
   margin-top: 20px;
   
 }
@@ -111,9 +111,10 @@ box-shadow: -3px 5px 7px 6px #5270FF;
 }
 
 .palavraunderline {
-  font-size: 100px;
-  text-align: end;
-  margin-top: -20px;
+  font-size: 80px;
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
 }
 
 .letrinha {
@@ -133,28 +134,27 @@ box-shadow: -3px 5px 7px 6px #5270FF;
   
 }
 .palavraunderline{
-  color: #5270FF;;
+  color: #5270FF;
 }
 .ganhou span {
   color: green;
 }
 .ganhou {
-  font-size: 20px;
+  font-size: 30px;
+  color: white;
 
 }
 .perdeu {
-  font-size: 20px;
-  color: aliceblue;
-  width: 80%;
+  font-size: 30px;
+  color: white;
   
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .underline {
-  font-size: 50px;
+  font-size: 40px;
 }
+
+
 
 .palavraganhou {
   font-size: 40px;
@@ -181,7 +181,7 @@ box-shadow: -3px 5px 7px 6px #5270FF;
     align-items: center;
   }
   .letras-alfabeto {
-    width: 70%;
+    width: 95%;
     height: 20px;
     display: flex;
     max-width: 450px;
@@ -199,14 +199,15 @@ box-shadow: -3px 5px 7px 6px #5270FF;
   }
 
   .imginicial {
-    width: 30%;
+    width: 70%;
+    height: 300px;
     max-width: 300px;
   }
   .OpcaoChutar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80%;
+    margin-top: 40%;
   }
 
   .escolherpalavra{
